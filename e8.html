@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div class="main">
+            <div>
+                 <p >lorem</p>
+                 <p id="num"></p>
+                 <button id="btn">
+                    click here
+                 </button>
+                 <button id="btn1">
+                    stop here
+                 </button>
+            </div>
+       </div>
+
+
+        <script>
+              const count = document.querySelector('p');
+              const btn = document.querySelector('#btn');
+              const time = document.querySelector('#btn1');
+              let num=0;
+              let stoptime;
+                const showcount = () =>{
+                      count.innerHTML = "loading.."
+                     stoptime =  setInterval(() => {
+                        count.innerHTML = `${num}`;
+                        num++
+                      }, 1000);
+                }
+              btn.addEventListener('click', showcount);
+              time.addEventListener('click', () =>{
+                 clearInterval(stoptime);
+              })
+
+        
+        </script>
+</body>
+</html>

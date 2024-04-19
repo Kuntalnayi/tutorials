@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css proerties</title>
+    <style>
+        *{
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+
+        }
+        body{
+            background-color: gold;
+            
+
+        }
+        .container{
+            width: 50%;
+            height: 50vh;
+            background-color: rebeccapurple;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+        .item{
+             height: 200px;
+             width: 200px;
+             background: black;
+             border-radius: 50%;
+             transition: all 1.5s linear;
+        }
+        .item:nth-child(1):hover{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+          
+              <!-- /transform properties -->
+              <div class="container">
+                <div class="item"></div>
+                <div class="item"></div>
+              </div>
+</body>
+</html>

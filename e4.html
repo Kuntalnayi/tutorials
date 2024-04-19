@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key events</title>
+</head>
+<body>
+             
+     
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum ullam s
+                it nemo eaque voluptate accusantium ipsa mollitia reprehenderit. Aspernatur.</p>
+                <br>
+                <input type="text" onkeydown="keydown()"  onkeypress="keypress()"  onkeyup="keyup()">
+                <br>
+                <p id="key"></p>
+
+                <script>
+                    const keypress = () =>{
+                           document.getElementById('key').innerHTML= `you press ${event.key} and it code is ${event.code}`
+                    }
+
+                    const keydown = () =>{
+                        document.getElementById('key').innerHTML = "key is down";
+                    }
+                    const keyup = () =>{
+                        document.getElementById('key').innerHTML = "key is up";
+                    }
+                </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set interval and out</title>
+    <style>
+           *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          height: 100vh;
+          width: 100%;
+          background-color: goldenrod;
+        }
+        p{
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #btn{
+            border: 2px solid black;
+              border-radius: 10px;
+              padding: 15px;
+              font-size: 20px;
+              font-weight: bold;
+              cursor: pointer;  
+        }
+    </style>
+</head>
+<body>
+                   <div class="main">
+                            <div>
+                                <p>want to see ur nick name</p>
+                                <p id="showmyname"></p>
+                                <button id="btn">click here</button>
+
+                            </div>
+                   </div>
+                   <script>
+                        
+                            const  myname = document.querySelector('#showmyname');
+                            const  btn =  document.querySelector('#btn');
+
+                             const showmyname = () =>{
+                                    myname.innerHTML = "laoding...";
+                                    setTimeout(() => {
+                                        myname.innerHTML = "tu chutiya he so ja ";
+                                    }, 2000);
+                             }
+                            btn.addEventListener('click',showmyname);
+                   </script>
+</body>
+</html>

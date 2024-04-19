@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputs evets</title>
+</head>
+<body>
+            <div class="main">
+                <div class="box">
+                     <label for="">enter your name</label>
+                     <input type="text" id="first">
+
+                     <br>
+                      <label for="">choose the car</label>
+                     <select name="ice" id="second" onchange="selectelement()">
+                    <option value="">car</option>
+                    <option value="">swift</option>
+                    <option value="">thar</option>
+                    <option value="">safari</option>
+                    <option value="">alto</option>
+                </select>
+                </div>
+                <div class="" id="result"></div>
+            </div>
+            <script>
+                 const selectelement = () =>{
+                          const inputchnge = document.getElementById('first').value;
+                          const carchange = document.getElementById('second').value;
+                          const result = document.getElementById('result');
+
+                          result.innerHTML = `mr ${inputchnge} take car this ${carchange} hahha`
+
+                 }
+            </script>
+              
+</body>
+</html>

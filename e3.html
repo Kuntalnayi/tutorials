@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+    <style>
+           *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          height: 100vh;
+          width: 100%;
+          background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+       <p id="para"   onmousedown="mousedown()" onmouseup="mouseup()">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eligendi fugit cumque magni et impedit delectus dolorem odio, dignissimos facere amet ut? Quia harum vitae aliquam, iste dolorem possimus reprehenderit odit neque. Enim nostrum, voluptatum aliquam beatae a, harum natus consequuntur non doloremque aperiam perferendis suscipit! Id cumque soluta quia.
+       </p>
+       <script>
+            // const mousedown = () =>{
+            //     alert('mouse is down');
+            //     document.getElementById('para').style.color = "red";
+            // }
+            // const mouseup = () =>{
+            //     alert('mouse is up');
+            //     document.getElementById('para').style.color = "blue";
+            // }
+
+            const first = document.getElementById('para');
+            first.addEventListener('mouseenter', () =>{
+                alert('mouse is enter in the para');            });
+                
+            first.addEventListener('mouseleave', () =>{
+                alert('mouse is leave in the para');            });
+       </script>
+            
+</body>
+</html>

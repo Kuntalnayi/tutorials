@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+     body{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       justify-content: center;
+       height: 100vh;
+       width: 100%;
+       background-color: goldenrod;
+     }
+     p{
+         font-size: 50px;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+     .btn{
+         border: 2px solid black;
+           border-radius: 10px;
+           padding: 15px;
+           font-size: 20px;
+           font-weight: bold;
+           cursor: pointer;  
+     }
+ </style>
+</head>
+<body>
+        <div class="main">
+            <div>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, dignissimos?</p>
+                 <p>this is a tutoira;l for the part y iof the wprf </p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, exercitationem.</p>
+                 <button class="btn"  onclick="mytime = setTimeout(mytime,2000)">click here</button>
+                 <button class="btn"   onclick="clearTimeout(mytime)">stop here</button>
+            </div>
+        </div>
+     
+        <script>
+             function mytime(){
+                 alert('you are a not gud boy for this partical so get looes');
+             }
+        </script>
+</body>
+</html>
